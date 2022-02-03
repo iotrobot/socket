@@ -2,5 +2,6 @@
 // https://www.cnblogs.com/gaochundong/p/csharp_tcp_service_models.html
 using LimCore.SocketServer;
 
-Console.WriteLine("Hello, World!");
-TcpSocketRioServer server = new TcpSocketRioServer();
+TcpServer server = new TcpServer(8889);
+server.Listen();
+Console.ReadKey();
